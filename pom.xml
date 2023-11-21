@@ -5,15 +5,33 @@
 
     <groupId>S1897.java.elasticsearch</groupId>
     <artifactId>java-elasticsearch</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>es7.x</module>
+    </modules>
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
         <junit-version>4.11</junit-version>
+        <jackson-version>2.9.9</jackson-version>
+        <lombok-version>1.18.22</lombok-version>
     </properties>
+
     <dependencies>
-        <!--测试依赖-->
+        <!--json-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson-version}</version>
+        </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok-version}</version>
+        </dependency>
+        <!--测试-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
