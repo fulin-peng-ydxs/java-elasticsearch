@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>es7.x</module>
+        <module>ex8.x</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 
